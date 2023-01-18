@@ -32,4 +32,10 @@ defmodule Blogger do
     your_result = String.upcase(your_input)
     IO.puts "Your result is #{your_result}"
   end
+
+  # iterate over the given items in the list
+  def loop do
+    list = ["cow", "cat", "dog"]
+    Enum.each(list, fn(x) -> IO.puts(String.upcase(x)) end)
+  end
 end
